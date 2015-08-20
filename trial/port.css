@@ -6,7 +6,7 @@
 body{
     font-family: avenir;
     font-size: 0px;
-    background: #3458a0;
+    background: #b5d8ff;
 }
 .process{
     font-family: avenir;
@@ -54,12 +54,12 @@ body{
 
 .red {
     width: 30%;
-    background: #3458a0;
+    background: #b5d8ff;
 }
 .green {
     width: 100%;
     height: 80px;
-    background: #3458a0;
+    background: #b5d8ff;
     display:inline-block;
     position:fixed;
 }
