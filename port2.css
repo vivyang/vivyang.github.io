@@ -2,6 +2,14 @@
     margin: 0;
     padding: 0;
 }
+a:link {
+    text-decoration: none;
+    color:black;
+}
+a:visited {
+    text-decoration: none;
+    color:black;
+}
 body{
     font-family: avenir;
     font-size: 0px;

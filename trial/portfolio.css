@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+	font-size: 0px;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+.wrapper{
+	width:100%;
+	margin:0 auto;
+}
+.column{
+	font-size: 0px;
+	cursor:url(cursor2.png),auto;
+	background-color: white;
+	display:inline-block;
+    width: 50%;
+    height: 4000px;
+    margin-left: 0px;
+    overflow-y: scroll;
+	border-left:1px solid;
+	color: black;
+}
+h1{
+	font-size: 12px;
+}
+
+.red{
+	background-color: red;
+}
