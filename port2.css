@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: avenir;
+    font-size: 0px;
+    background-color: black;
+}
+.overlay{
+    z-index: -1;
+    /*display:none;*/
+    visibility: hidden;
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: 30%;
+    background-repeat: repeat;
+    opacity: 0;
+    transition:visibility 0s linear 0.3s,opacity 0.3s linear;
+}
+.showrebirth:hover .rebirthimg {
+    /*display: block;*/
+    opacity: 1;
+    z-index: -1;
+    position:fixed;
+    top:0px;
+    left:0px;
+    visibility:visible;
+    opacity:1;
+    transition-delay:0s;
+}
+
+.shownyms:hover .nymsimg {
+    /*display: block;*/
+    opacity: 1;
+    z-index: -1;
+    position:fixed;
+    top:0px;
+    left:0px;
+    visibility:visible;
+    opacity:1;
+    transition-delay:0s;
+    background-size: 60%;
+}
+
+.showamazon:hover .amazonimg {
+    /*display: block;*/
+    opacity: 1;
+    z-index: -1;
+    position:fixed;
+    top:0px;
+    left:0px;
+    visibility:visible;
+    opacity:1;
+    transition-delay:0s;
+    background-size: 50%;
+}
+
+.showalex:hover .aleximg {
+    /*display: block;*/
+    opacity: 1;
+    z-index: -1;
+    position:fixed;
+    top:0px;
+    left:0px;
+    visibility:visible;
+    opacity:1;
+    transition-delay:0s;
+    background-size: 40%;
+}
+.showdietpedia:hover .dietpediaimg {
+    /*display: block;*/
+    opacity: 1;
+    z-index: -1;
+    position:fixed;
+    top:0px;
+    left:0px;
+    visibility:visible;
+    opacity:1;
+    transition-delay:0s;
+    background-size: 30%;
+}
+
+
+.rebirthimg { background-image: url('other.png');}
+.nymsimg { background-image: url('alex2.png');}
+.amazonimg { background-image: url('gradient5.png');}
+.aleximg { background-image: url('amazon.png');}
+.dietpediaimg { background-image: url('grud.png');}
+/*.wash { background-image: url('img/nada.jpg');}
+.parsons { background-image: url('img/pad.jpg');}*/
+
+.projects{
+    width:180px;
+    height:90px;
+    margin-right: 150px;
+    background-color: none;
+}
+.showcircle:hover .circle {
+display : block;
+}
+.circle {
+  border: 4px solid black;
+  border-radius: 70px;
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  display:none;
+}
+.nyms {
+  z-index: 10;
+  top:110px;
+}
+.alex {
+  z-index: 10;
+  top:240px;
+}
+.birth {
+  z-index: 10;
+  top:370px;
+}
+.wash {
+  z-index: 10;
+  top:500px;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+/* Create the animation blocks */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Spinning, gradient circle; CSS only! */
+.advanced {
+    width: 70px;
+    height: 70px;
+    
+    animation-name: spin; 
+    animation-duration: 8s; /* 3 seconds */
+    animation-iteration-count: infinite; 
+    animation-timing-function: linear;
+}
+p{
+    color:blue;
+    text-align: left;
+    font-size: 8px;
+    letter-spacing: 1.5px;
+}
+h2{
+    margin-top: 2px;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: .5px;
+    z-index: 10;
+}
+.name{
+    background-color: black;
+    font-size: 15px;
+    color:white;
+    position: fixed;
+    top:30px;
+    left:60px;
+    border:1px solid blue;
+    text-align: center;
+    padding:10px;
+}
+.column{
+    margin-top: 80px;
+    margin-left: 30%;
+    width:65%;
+    height:100%;
+    background: none;
+}
+
+.back{
+    /*margin-top: 80px;
+    margin-left: 30%;*/
+    width:65%;
+    height:100%;
+    background: white;
+    position:fixed;
+    top:80px;
+    left:30%;
+    z-index: -2;
+}
+
+.columna{
+    width:180px;
+    height:100%;
+    display: inline-block;
+    margin-left: 40px;
+    background-color: none;
+}
+.columnb{
+    width:180px;
+    height:100%;
+    display: inline-block;
+    margin-left: 25%;
+}
+.text{
+    margin-top: 40px;
+    width:90%;
+    height:92px;
+    background-color: none;
+/*    margin-top: 40px;*/
+}
+
+@media screen and (max-width: 1000px) {
+    .columnb{
+    width:180px;
+    height:100%;
+    display: inline-block;
+    margin-left: 10%;
+}
+.name{
+    background-color: black;
+    font-size: 15px;
+    color:white;
+    position: fixed;
+    top:30px;
+    left:30px;
+    border:1px solid blue;
+    text-align: center;
+    padding:10px;
+}
+}
+
+
