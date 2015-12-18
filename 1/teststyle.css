@@ -3,6 +3,12 @@
 body{
     background-color: #2e3192;
     font-family: gridnik;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .element::-webkit-scrollbar { width: 0 !important }
 
@@ -13,6 +19,12 @@ body{
     background-color: #2e3192;
     left:0;
     right:0;
+}
+.none{
+    display:none;
+}
+.show{
+    display:block;
 }
 .on{
     padding-top: 20px;
