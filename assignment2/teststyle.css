@@ -1,0 +1,173 @@
+@font-face { font-family: gridnik; src: url('foundrygridnik.ttf'); } 
+body{
+    font-size: 0px;
+    background-color: black;
+}
+
+#middle-offset {
+  position: relative;
+  height: 100%;
+  overflow:hidden;
+}
+.gradient{
+    width:100%;
+    height:100%;
+    background-color:black;
+    position:fixed;
+    left:0px;
+    top:0px;
+}
+.cover{
+    width:30000px;
+    height:30000px;
+    position:fixed;
+}
+.dinner-container{
+    margin:0 auto;
+    overflow: hidden;
+    font-size: 0px;
+    width:900px;
+}
+.morning-container{
+    margin:0 auto;
+    overflow: hidden;
+    font-size: 0px;
+    width:900px;
+}
+.breakfast-container{
+    margin:0 auto;
+    overflow: hidden;
+    font-size: 0px;
+    width:900px;
+}
+.lunch-container{
+    margin:0 auto;
+    overflow: hidden;
+    font-size: 0px;
+    width:900px;
+}
+.commute-container{
+    margin:0 auto;
+    overflow: hidden;
+    font-size: 0px;
+    width:900px;
+}
+.sleep-container{
+    margin:0 auto;
+    overflow: hidden;
+    font-size: 0px;
+    width:900px;
+}
+.work-container{
+    margin:0 auto;
+    overflow: hidden;
+    font-size: 0px;
+    width:900px;
+}
+.break-container{
+    margin:0 auto;
+    overflow: hidden;
+    font-size: 0px;
+    width:900px;
+}
+.video-styles{
+    margin:0 auto;
+}
+.time{
+    text-align: center;
+    padding:10px;
+    margin:0 auto;
+    margin-top: 30px;
+}
+.text{
+    text-align: center;
+    font-family: courier;
+    font-size: 8px;
+    color: #9f9f9f;
+    margin-top: 5px;
+    margin-bottom:5px;
+    letter-spacing: 2px;
+}
+.middle{
+    position: fixed;
+    top:254px;
+    margin:0 auto;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:53% 0%}
+    50%{background-position:48% 100%}
+    100%{background-position:53% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:53% 0%}
+    50%{background-position:48% 100%}
+    100%{background-position:53% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:53% 0%}
+    50%{background-position:48% 100%}
+    100%{background-position:53% 0%}
+}
+
+.gradient-1{
+    background: linear-gradient(178deg, #000000, #000589);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 2000s ease infinite;
+    -moz-animation: AnimationName 2000s ease infinite;
+    animation: AnimationName 2000s ease infinite;
+
+}
+
+.gradient-2{
+   background: linear-gradient(178deg, #000589, #4b4fa9, #8a9ee7, #a6cbba, #eaf0a7);
+    background-size: 1000% 1000%;
+    -webkit-animation: AnimationName 2000s ease infinite;
+    -moz-animation: AnimationName 2000s ease infinite;
+    animation: AnimationName 2000s ease infinite;
+}
+
+.gradient-3{
+    background: linear-gradient(178deg, #eaf0a7, #f6e092, #fcd95a, #b8fff2, #81e4ff);
+    background-size: 1000% 1000%;
+    -webkit-animation: AnimationName 2000s ease infinite;
+    -moz-animation: AnimationName 2000s ease infinite;
+    animation: AnimationName 2000s ease infinite;
+}
+.gradient-4{
+    background: linear-gradient(178deg, #b8fff2, #81e4ff, #59dbff, #22cfff);
+    background-size: 1000% 1000%;
+    -webkit-animation: AnimationName 2000s ease infinite;
+    -moz-animation: AnimationName 2000s ease infinite;
+    animation: AnimationName 2000s ease infinite;
+}
+.gradient-5{
+    background: linear-gradient(178deg, #22cfff, #63ddff, #a8ecff, #99e9ff);
+    background-size: 1000% 1000%;
+    -webkit-animation: AnimationName 2000s ease infinite;
+    -moz-animation: AnimationName 2000s ease infinite;
+    animation: AnimationName 2000s ease infinite;
+}
+.gradient-6{
+    background: linear-gradient(178deg, #22cfff, #63ddff, #a8ecff, #99e9ff);
+    background-size: 1000% 1000%;
+    -webkit-animation: AnimationName 2000s ease infinite;
+    -moz-animation: AnimationName 2000s ease infinite;
+    animation: AnimationName 2000s ease infinite;
+}
+/*still need to change gradients*/
+.gradient-7{
+    background: linear-gradient(178deg, #22cfff, #63ddff, #a8ecff, #99e9ff);
+    background-size: 1000% 1000%;
+    -webkit-animation: AnimationName 2000s ease infinite;
+    -moz-animation: AnimationName 2000s ease infinite;
+    animation: AnimationName 2000s ease infinite;
+}
+.gradient-8{
+    background: linear-gradient(178deg, #22cfff, #63ddff, #a8ecff, #99e9ff);
+    background-size: 1000% 1000%;
+    -webkit-animation: AnimationName 2000s ease infinite;
+    -moz-animation: AnimationName 2000s ease infinite;
+    animation: AnimationName 2000s ease infinite;
+}
+

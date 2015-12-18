@@ -1,0 +1,103 @@
+@font-face { font-family: gridnik; src: url('foundrygridnik.ttf'); } 
+
+body{
+    background-color: #2e3192;
+    font-family: gridnik;
+}
+.element::-webkit-scrollbar { width: 0 !important }
+
+.top{
+    width:100%;
+    height:100%;
+    display:fixed;
+    background-color: #2e3192;
+    left:0;
+    right:0;
+}
+.on{
+    padding-top: 20px;
+    font-size: 50px;
+    text-align: center;
+    color:#2e3192;
+    line-height: 1;
+}
+.off{
+    font-size: 50px;
+    color:#2e3192;
+    text-align: center;
+}
+.on:hover{
+    color: #ff7800;
+}
+.off:hover{
+    color:none;
+   -webkit-text-stroke: 1px white;
+}
+
+#middle {
+    top: 0;
+    font-size: 0px;
+    bottom: 0px;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+
+#middle-offset {
+  position: relative;
+  height: 100%;
+  overflow:hidden;
+}
+h1{
+    font-family: gridnik;
+    z-index: 5;
+    position:fixed;
+    font-size: 40px;
+    color:white;
+}
+.N{
+    /*left:25%;
+    top:20%;*/
+}
+.oh{
+    /*left:25%;
+    top:20%;*/
+}
+.T{
+    /*left:48%;
+    top:20%;*/
+}
+.H{
+    /*left:48%;
+    top:20%;*/
+}
+.scroll {
+    overflow-y: scroll;
+    overflow:auto;
+}
+.scroll {
+    font-size: 12px;
+    display:inline-block;
+    right: 0;
+    top: 0;
+    width: 20%;
+    height:20%;
+    bottom: 0;
+    background-color: #ff8227;
+
+}
+.blue{
+    position:fixed;
+    margin: 5% auto;
+    left: 0;
+    right: 0;
+    width:600px;
+    display:none;
+}
+img{
+    width:300px;
+}
+#one {
+    background-color: none;
+}
