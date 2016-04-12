@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Pictograms</title>
+		<link rel='stylesheet' type='text/css' href='horizontalthesis.css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	</head>
+	<body>
+	<div class="wrapper">
+		<div class="all">
+			<div class="top-bar">
+				<div class="bar"></div>
+				  <li><a href="#" class="archive"><p>Archive</p></a>
+    				<ul>
+      				<li class="big"><a href="#"><p>All</p></a></li>
+     				<li class="big"><a href="people.html"><p>People</p></a></li>
+      				<li class="big"><a href="#"><p>Nature</p></a></li>
+      				<li class="big"><a href="#"><p>Activities</p></a></li>
+      				<li class="big"><a href="#"><p>Celebrations</p></a></li>
+      				<li class="big"><a href="#"><p>Travel</p></a></li>
+      				<li class="big"><a href="#"><p>Places</p></a></li>
+      				<li class="big"><a href="#"><p>Food/Drinks</p></a></li>
+      				<li class="big"><a href="#"><p>Objects</p></a></li>
+      				<li class="big"><a href="#"><p>Abstract</p></a></li>
+    				</ul> 
+ 				 </li>
+				<p class="about big">About</p>
+				<p class="search">Search</p>
+			</div>
+		</div>
+		<div class='edit-space blue'>
+		<section class="editable blue" contenteditable="true">
+    		<p id="tt_element" class="blue"></p>
+  		</section>
+		</div>
+		<!-- <div class="bottom-bar"> -->
+	</div>
+
+
+
+<script>
+var tt_element = document.getElementById("tt_element");
+var tt_current_element;
+var tt_array = [];
+var tt_text_with_style = [
+  {size: '48px', lineHeight: '1em', txt: 'winter seclusion emdash;^listening, that evening,^To the rain in the mountain.^^emdash Kobayashi Issa^^'},
+  {size: '30px', lineHeight: '1em', txt: 'Two roads diverged into a yellow wood,^And sorry I could not travel both^And be one traveler, long I stood^And looked down one as far as I could^To where it bent in the undergrowth;^^Then took the other, as just as fair,^And having perhaps the better claim,^Because it was grassy and wanted wear;^Though as for that the passing there^Had worn them really about the same,^^And both that morning equally lay^In leaves no step had trodden black^Oh, I kept the first for another day!^Yet knowing how way leads on to way,^I doubted if I should ever come back.^^I shall be telling this with a sigh^Somewhere ages and ages hence:^Two roads diverged in a wood, and I emdash^I took the one less traveled by,^And that has made all the difference^^emdash Robert Frost^^'},
+  {size: '90px', lineHeight: '1.25em', txt: 'I am Nobody! Who are you?^Are you emdash Nobody emdash too?^Then there is a pair of us!^Do not tell! they would advertise emdash you know!^^How dreary emdash to be emdash somebody!^How public emdash like a frog emdash^To tell ones name emdash the livelong June emdash ^To an admiring Bog!^^emdash Emily Dickinson^^'}];
+var tt_timer;
+var tt_loop = false;
+var tt_speed = 150;
+var tt_delay = 3000;
+var tt_br = "^";
+var i = 0;
+var current_line
+
+
+function styleMyText() {
+  var style = 'font-size: ' + current_line.size + ';line-height: ' + current_line.lineHeight
+  tt_current_element = document.createElement('span')
+  tt_current_element.setAttribute('style', style)
+  tt_element.appendChild(tt_current_element)
+}
+
+function clearMyText() {
+  stopScroll=true;
+}
+
+function typeMyText() {
+  if (tt_array.length === 0) {
+    current_line = tt_text_with_style[i++]
+    if (!current_line) {
+      clearTimeout(tt_timer);
+      if (tt_loop) {
+        setTimeout(clearMyText, tt_delay);
+      }
+      return false  
+    }
+    current_style = current_line.size
+    tt_array = current_line.txt.split('')
+    styleMyText()
+  }
+  
+  if (tt_array[0] == tt_br) {
+    tt_current_element.innerHTML += "<br>";
+    tt_array.shift();
+  } else {
+    tt_current_element.innerHTML += tt_array.shift();
+  }
+
+  tt_timer = setTimeout(typeMyText, tt_speed);
+}
+
+
+typeMyText();
+
+var stopScroll = false;
+
+$(function() {
+
+  function scrollSlow() {
+    if (!stopScroll) {
+      window.scrollBy(0, 1.5);
+
+      setTimeout(function() {
+        window.requestAnimationFrame(scrollSlow);
+      }, 10);
+    }
+  }
+
+  $('ul').mouseover(function() {
+    stopScroll = true;
+  });
+
+  $('ul').mouseout(function() {
+  console.log("Mouseout");
+    stopScroll = false;
+    scrollSlow();
+  });
+
+  scrollSlow();
+
+});
+
+	</script>
+	</body>
+</html>

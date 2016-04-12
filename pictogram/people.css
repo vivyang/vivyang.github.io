@@ -1,0 +1,346 @@
+@font-face { font-family: Lettera; src: url('Lettera-Regular.ttf');}
+@font-face { font-family: Lettera-viv; src: url('Lettera-Final_YES.ttf');} 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+font-variant-ligatures: common-ligatures;
+-moz-font-feature-settings: "liga=1, dlig=1";
+-ms-font-feature-settings: "liga", "dlig";
+-webkit-font-feature-settings: "liga", "dlig";
+-o-font-feature-settings: "liga", "dlig";
+font-feature-settings: "liga", "dlig";
+font-family: Lettera;
+font-size: 48px;
+line-height: 1.3em;
+/*background-color: red;*/
+list-style-type: none;
+}
+
+ul {
+	line-height: 1.5em;
+	font-size: 48px;
+	width: 100%;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+ul li {
+	display: block;
+	position: relative;
+	float: left;
+	border:1px solid none;
+}
+li ul {display: none;
+}
+.about{
+	font-family: Lettera-viv;
+	position:fixed;
+	right:20px;
+	top:10px;
+	z-index: 2;
+	font-size: 48px;
+}
+.items{
+	padding: 10px 10px 10px 20px;
+	/*margin-bottom: 10px;*/
+}
+.first{
+	padding-top: 70px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+.bar{
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 36%, rgba(255,255,255,0.69) 56%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(36%,rgba(255,255,255,1)), color-stop(56%,rgba(255,255,255,0.69)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 36%,rgba(255,255,255,0.69) 56%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 36%,rgba(255,255,255,0.69) 56%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 36%,rgba(255,255,255,0.69) 56%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 36%,rgba(255,255,255,0.69) 56%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+	width:100%;
+	height:100px;
+	position:fixed;
+	z-index: 1;
+}
+.archive{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+56,ffffff+36,ffffff+100&amp;1+36,0+100;White+to+Transparent */
+	position:fixed;
+	display:inline-block;
+	width:100%;
+	list-style: none;
+	text-decoration: none;
+	list-style-type: none;
+	color:blue;
+	font-size: 48px;
+	padding: 10px 10px 10px 20px;
+	z-index: 2;
+}
+/*li{
+	text-decoration: none;
+	display:inline-block;
+	width: 100%;
+	list-style: none;
+}*/
+.list{
+	padding-top: 20px;
+}
+.list div:hover{
+	color:blue;
+	font-family: Lettera-viv;
+}
+p{
+	font-size: 28px;
+}
+ul li a {
+	display: block;
+	background: #000;
+	padding: 10px 10px 10px 20px;
+	text-decoration: none;
+    color: #fff;
+    z-index: 2;
+}
+ul:hover {
+		width: 100%;
+		z-index: 2;
+}
+ul li a:hover {
+	font-family: Lettera-viv;
+	width: 100%;
+	background: blue;
+	z-index: 2;
+}
+li:hover ul {
+	width: 100%;
+	display: block; 
+	position: absolute;
+	z-index: 2;
+}
+li:hover li {
+	float: none;
+	z-index: 2;
+}
+.angry-m:hover .angry {
+	display:block;
+}
+.annoyed-m:hover .annoyed {
+	display:block;
+}
+.blank-m:hover .blank {
+	display:block;
+}
+.blissful-m:hover .blissful {
+	display:block;
+}
+.cautious-m:hover .cautious {
+	display:block;
+}
+.competitive-m:hover .competitive {
+	display:block;
+}
+.confused-m:hover .confused {
+	display:block;
+}
+.cool-m:hover .cool {
+	display:block;
+}
+.crazy-m:hover .crazy {
+	display:block;
+}
+.cry-m:hover .cry {
+	display:block;
+}
+.dead-m:hover .dead {
+	display:block;
+}
+.determined-m:hover .determined {
+	display:block;
+}
+.die-m:hover .die {
+	display:block;
+}
+.disappointed-m:hover .disappointed {
+	display:block;
+}
+.ear-m:hover .ear {
+	display:block;
+}
+.embarass-m:hover .embarass {
+	display:block;
+}
+.excited-m:hover .excited {
+	display:block;
+}
+.flirt-m:hover .flirt {
+	display:block;
+}
+.flustered-m:hover .flustered {
+	display:block;
+}
+.frightened-m:hover .frightened {
+	display:block;
+}
+.happy-tears-m:hover .happy-tears {
+	display:block;
+}
+.jealous-m:hover .jealous {
+	display:block;
+}
+.laugh-m:hover .laugh {
+	display:block;
+}
+.lips-m:hover .lips {
+	display:block;
+}
+.listening-m:hover .listening {
+	display:block;
+}
+.man-m:hover .man {
+	display:block;
+}
+.mellow-m:hover .mellow {
+	display:block;
+}
+.mind-m:hover .mind {
+	display:block;
+}
+.mundane-m:hover .mundane {
+	display:block;
+}
+.nice-m:hover .nice {
+	display:block;
+}
+.nobody-m:hover .nobody {
+	display:block;
+}
+.person-m:hover .person {
+	display:block;
+}
+.run-m:hover .run {
+	display:block;
+}
+.sad-m:hover .sad {
+	display:block;
+}
+.secret-m:hover .secret {
+	display:block;
+}
+.shock-m:hover .shock {
+	display:block;
+}
+.shocked-m:hover .shocked {
+	display:block;
+}
+.sick-m:hover .sick {
+	display:block;
+}
+.sideeye-m:hover .sideeye {
+	display:block;
+}
+.sigh-m:hover .sigh {
+	display:block;
+}
+.silly-m:hover .silly {
+	display:block;
+}
+.smile-m:hover .smile {
+	display:block;
+}
+.smug-m:hover .smug {
+	display:block;
+}
+.sobbing-m:hover .sobbing {
+	display:block;
+}
+.soul-m:hover .soul {
+	display:block;
+}
+.stood-m:hover .stood {
+	display:block;
+}
+.suspicious-m:hover .suspicious {
+	display:block;
+}
+.talk-m:hover .talk {
+	display:block;
+}
+.touched-m:hover .touched {
+	display:block;
+}
+.traveler-m:hover .traveler {
+	display:block;
+}
+.walk-m:hover .walk {
+	display:block;
+}
+.we-m:hover .we {
+	display:block;
+}
+.who-m:hover .who {
+	display:block;
+}
+.wink-m:hover .wink {
+	display:block;
+}
+.woman-m:hover .woman {
+	display:block;
+}
+.wonder-m:hover .wonder {
+	display:block;
+}
+.worried-m:hover .worried {
+	display:block;
+}
+
+
+li:hover a {
+	width: 100%;
+	background: blue;
+	color:white;
+	z-index: 2;
+}
+li:hover li a:hover {
+	background: white;
+	color:blue;
+	z-index: 2;
+}
+#drop-nav li ul li {
+	border-top: 0px;
+}
+/*.list{
+	position:relative;
+}*/
+.woman-img{
+	position:fixed;
+ 	top: 50%;
+	left: 50%;
+	width:207px;
+	height:298px;
+	left: 0;
+  right: 0;
+	/*display:none;*/
+}
+.myfont{
+	font-size: 550px;
+	top: 55%;
+	left: 50%;
+	font-family: Lettera-viv;
+	position:fixed;
+	text-align: center;
+	left: 0;
+  	right: 0;
+  	z-index: -1;
+	display:none;
+	color:black;
+}
+.angry{
+	z-index: -1;
+	display:none;
+	color:black;
+}
+
+/*.woman:hover .woman-img {
+	display: block;
+}*/
